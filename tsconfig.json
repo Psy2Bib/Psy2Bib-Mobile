@@ -1,6 +1,30 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "target": "esnext",
+    "module": "NodeNext",
+    "strict": true,
+    "jsx": "react-native",
+    "moduleResolution": "nodenext",
+    "allowJs": false,
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "types": [
+      "expo",
+      "react",
+      "react-native"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@noble/hashes/*": [
+        "./node_modules/@noble/hashes/*"
+      ],
+      "@noble/ciphers/*": [
+        "./node_modules/@noble/ciphers/*"
+      ]
+    }
+  },
+  "extends": "expo/tsconfig.base"
 }
