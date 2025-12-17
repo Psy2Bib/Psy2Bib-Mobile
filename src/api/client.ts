@@ -33,7 +33,7 @@ import { Platform } from 'react-native';
  * 
  * @todo Utiliser les variables d'environnement (expo-constants + app.config.js)
  */
-export const API_BASE = 'http://192.168.1.78:4000';
+export const API_BASE = 'https://psy2bib-back-414161649060.europe-west1.run.app';
 
 /**
  * Variables globales pour stocker les tokens en mémoire (RAM).

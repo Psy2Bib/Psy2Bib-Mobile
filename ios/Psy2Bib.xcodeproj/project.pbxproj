@@ -20,7 +20,7 @@
 		13B07F961A680F5B00A75B9A /* Psy2Bib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psy2Bib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Psy2Bib/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Psy2Bib/Info.plist; sourceTree = "<group>"; };
-		27F043B348B6A34BD2A0262E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Psy2Bib/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		27F043B348B6A34BD2A0262E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Psy2Bib/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3FD4CD559AD67296D65B3727 /* Pods-Psy2Bib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Psy2Bib.release.xcconfig"; path = "Target Support Files/Pods-Psy2Bib/Pods-Psy2Bib.release.xcconfig"; sourceTree = "<group>"; };
 		5106DED44F917E899D43E90A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Psy2Bib/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		656697BBCFC39DB4ADD2DBAE /* libPods-Psy2Bib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Psy2Bib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,6 @@
 				9E695FBFAC48AF73EADD7D27 /* Pods-Psy2Bib.debug.xcconfig */,
 				3FD4CD559AD67296D65B3727 /* Pods-Psy2Bib.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -389,6 +388,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Psy2Bib/Psy2Bib.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67H4KQUUR9;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -425,6 +425,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Psy2Bib/Psy2Bib.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 67H4KQUUR9;
 				INFOPLIST_FILE = Psy2Bib/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -81,8 +81,15 @@ export const PsyAppointmentsScreen = () => {
     setError(null);
     try {
       const res = await api.get('/psy/appointments');
-      const apps = Array.isArray(res.data) ? res.data : res.data?.appointments;
-      setAppointments(apps ?? []);
+      const payload = Array.isArray(res.data) ? res.data : res.data?.appointments;
+      const normalized = (payload ?? []).map((a: any) => ({
+        ...a,
+        // Normalisation des champs de date pour l'affichage
+        start: a?.scheduledStart ?? a?.start ?? a?.availability?.start ?? null,
+        end: a?.scheduledEnd ?? a?.end ?? a?.availability?.end ?? null,
+        patient: a?.patient ?? a?.user ?? null,
+      }));
+      setAppointments(normalized);
     } catch (e: any) {
       const msg = e?.response?.data?.message ?? e?.message ?? 'Impossible de charger les rendez-vous';
       setError(msg);
